@@ -1,2 +1,2 @@
 # Learning Django
-Suff I did while learning Django Framework
+Code samples of all the stuff I did while learning Django Framework
