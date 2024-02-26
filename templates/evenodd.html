@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{forms}}
+        <button type="submit">EVEN | ODD</button>
+        <div>
+            output
+            <input type="text" value="{{output}}">
+        </div>
+    </form>
+</section>
+{% endblock %}

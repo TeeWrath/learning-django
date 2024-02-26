@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block content %}
+
+<body>
+  <h1>Welcome to Home Page</h1>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
+    quibusdam.
+  </p>
+  {% for l in listb %}
+  <div>{{l}}</div>
+  {% endfor %}
+
+  <table border="1" , cellpadding="10px">
+    <tr>
+      <th>Icon</th>
+      <th>title</th>
+      <th>Description</th>
+    </tr>
+
+    {% for n in serviceData %}
+    <tr>
+      <td>{{n.service_icon}}</td>
+      <td>{{n.service_title}}</td>
+      <td>{{n.service_des | safe}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+{% endblock %}

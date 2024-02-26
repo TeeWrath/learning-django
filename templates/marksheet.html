@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{forms}}
+        <button type="submit">Submit</button>
+        <div>
+            Total
+            <input type="text" value="{{total}}">
+        </div>
+        <div>
+            Percentage
+            <input type="text" value="{{perc}}">
+        </div>
+        <div>
+            Division
+            <input type="text" value="{{div}}">
+        </div>
+    </form>
+</section>
+{% endblock %}
